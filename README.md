@@ -1,1 +1,1 @@
-# japan-in.ru
+japan-in.ru
