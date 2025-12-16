@@ -1,0 +1,85 @@
+a:2:{s:15:"categories_menu";s:3968:"<div class="container dropdown-menu megamenu"  role="menu" ><div class="row g-3"><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/in-stock>В наличии</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/hit-sales>Популярные товары</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/promo>Товары по акции</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/bless-you>Твое здоровье</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-children>Здоровье детей</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-men>Мужчинам</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/cosmetic>Японская косметика</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/devices>Приборы и массажеры</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/foodstuffs>Продукты питания</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/household-goods>Товары для дома</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/pet-supplies>Зоотовары</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/decorative-cosmetics>Декоративная косметика</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-body>Для тела</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-face>Для лица</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-oral-cavity>Для полости рта</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-hair>Для волос</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-hands>Для рук</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/for-feet>Для ног</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/aromatherapy>Ароматерапия</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/sets-gift>Наборы подарочные</a>
+            </6>
+        </div><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6>
+                <a href=http://localhost:8888/category/accessories>Аксессуары</a>
+            </6>
+        </div></div></div>";s:4:"time";i:1765810594;}

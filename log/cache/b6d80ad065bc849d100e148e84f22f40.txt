@@ -1,0 +1,22 @@
+a:2:{s:14:"cosmetics_menu";s:1320:"<div class="container dropdown-menu megamenu"  role="menu" ><div class="row g-3"><div class="col-lg-4 col-md-6 col-sm-1">
+            <h6 class="title">Японская косметика</h6><ul class="list-unstyled"><li>
+            <a href=http://localhost:8888/category/decorative-cosmetics>Декоративная косметика</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-body>Для тела</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-face>Для лица</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-oral-cavity>Для полости рта</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-hair>Для волос</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-hands>Для рук</a>
+        </li><li>
+            <a href=http://localhost:8888/category/for-feet>Для ног</a>
+        </li><li>
+            <a href=http://localhost:8888/category/aromatherapy>Ароматерапия</a>
+        </li><li>
+            <a href=http://localhost:8888/category/sets-gift>Наборы подарочные</a>
+        </li><li>
+            <a href=http://localhost:8888/category/accessories>Аксессуары</a>
+        </li></ul></div></div></div>";s:4:"time";i:1765212241;}
