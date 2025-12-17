@@ -163,56 +163,5 @@ $(document).ready(function() {
     }); 
     */
 
-    /* ================гравюры ukiyo_e================ */
-
-    /*
-    // 1. Получаем элемент, который будем наблюдать
-    const element = $('.filters'); // Используем jQuery для получения элемента
-
-    // 2. Создаем экземппляр ResizeObserver
-    const resizeObserver = new ResizeObserver(entries => {
-        // Цикл по всем наблюдаемым элементам (обычно один)
-        for (let entry of entries) {
-            // Получаем новые размеры
-            const { width, height } = entry.contentRect;
-            //console.log(`Элемент изменил размер: ${width}px x ${height}px`);
-
-            // Здесь можно добавить свой код для обработки изменения размера
-            var $parent_sidebar  = $('.sidebar');           // родительский блок
-            var $child_filters   = $('.filters');           // дочерний блок
-            var $child_ukiyo_e   = $('.ukiyo_e');
-
-            var sidebarHeight = 1000;                       // пороговая высота (в пикселях)
-            var filtersHeight = 210;
-
-            // Проверяем высоту родителя при загрузке страницы
-            if ( $parent_sidebar.height() < sidebarHeight ) {
-                $child_ukiyo_e.hide();                       // Скрываем дочерний блок
-            } else {
-                $child_ukiyo_e.show();
-            }
-
-            // Скрываем гравюры если фильтр раскрывается 
-            if ( $child_filters.height() > filtersHeight ) {
-                $child_ukiyo_e.hide();
-            } else {
-                $child_ukiyo_e.show();
-            }
-        }
-    });
-
-
-    // 3. Начинаем наблюдать за элементом
-    resizeObserver.observe(element[0]); // Передаем нативный DOM-элемент (element[0])
-    */
-
-    /*
-    ResizeObserver: Это стандартный веб API, работающий независимо от jQuery, но легко интегрируемый с ней.
-
-    observe(element[0]): Метод observe принимает нативный DOM-элемент, поэтому
-        при использовании jQuery нужно передать element[0].
-
-    contentRect: Объект, содержащий width (ширину) и height (высота) элемента без учета отступов (padding).
-    */
 
 });

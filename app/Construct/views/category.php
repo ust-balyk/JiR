@@ -23,12 +23,19 @@
       <div class="row">
 
         <div class="col-md-2 sidebar">
+
           <div class="d-grid">
             <a href="#" class="btn btn-outline-primary"><h6>сбросить фильтры</h6></a>
           </div>
 
           <div class="filters">
-            <h3>Фильтры</h3>
+
+            <div id="btn_filters" class="d-grid">
+              <a id="selector_link" href="#" class="#">
+                <h6 id="selector_text" class="#"></h6>
+              </a>
+            </div>
+
             <div class="accordion" id="filters_accordion">
 
               <div class="accordion-item">
@@ -87,201 +94,49 @@
                 </script>
               </div>
             </div>
-
           </div><!--filters-->
 
           <div class="ukiyo_e">
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>" alt=""></img>
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>" alt=""></img>
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>" alt=""></img>  
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>"
+                  alt="" loading="lazy"></img>
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>"
+                  alt="" loading="lazy"></img>
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
+                  alt="" loading="lazy"></img>  
           </div>
 
         </div><!--sidebar-->
 
         <div class="col-md-10 content">
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-face/11642.jpg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 product-card">
                 <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                  <div class="product-card-img">
+                    <img src="<?= base_url('/images/for-face/11642.jpg'); ?>" alt="">
+                  </div>
                 </a>
-
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/aromatherapy/11383.png'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
-
-          <div class="col-lg-3 col-md-4 product-card">
-            <a href="#">
-              <div class="product-card-img">
-                <img src="<?= base_url('/images/for-face/11642.jpg'); ?>" alt="">
-              </div>
-            </a>
-            <div class="product-card-details">
-              <h6 class="product-card-title">
-                <a href="#">
-                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
-                </a>
-              </h6>
-              <div class="product-card-price">
-                33 000р<del>35 000р</del>
-              </div>
-              <div class="product-card-btns">
-                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                <a href="#" class="btn btn-outline-secondary add-to-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-            </div>
-          </div><!--product-card-->
+                <div class="product-card-details">
+                  <h6 class="product-card-title">
+                    <a href="#">
+                      Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                    </a>
+                  </h6>
+                  <div class="product-card-price">
+                    33 000р<del>35 000р</del>
+                  </div>
+                  <div class="product-card-btns">
+                    <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                      <i class="fa-solid fa-heart"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!--product-card-->
+            <!--/div><!--row-->
+          <!--/div><!--container-->
 
           <div class="col-lg-3 col-md-4 product-card">
             <a href="#">
@@ -307,7 +162,163 @@
                 </a>
               </div>
             </div>
-          </div><!--product-card-->
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/for-face/11642.jpg'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 product-card">
+            <a href="#">
+              <div class="product-card-img">
+                <img src="<?= base_url('/images/aromatherapy/11383.png'); ?>" alt="">
+              </div>
+            </a>
+            <div class="product-card-details">
+              <h6 class="product-card-title">
+                <a href="#">
+                  Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                </a>
+              </h6>
+              <div class="product-card-price">
+                33 000р<del>35 000р</del>
+              </div>
+              <div class="product-card-btns">
+                <a href="#" class="btn btn btn-outline-secondary add-to-favorites">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary add-to-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
           <div class="col-lg-3 col-md-4 product-card">
             <a href="#">
@@ -334,6 +345,8 @@
               </div>
             </div>
           </div><!--product-card-->
+          </div>
+          </div><!--удалить-->
 
         </div><!--content-->
       </div><!--row-->

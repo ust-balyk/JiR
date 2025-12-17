@@ -886,13 +886,49 @@ div.filters {
     z-index: 2;
 }
 
-div.filters h3 {
-    font-size: 20px;
-    margin: 20px auto 20px 0px;
+/* выбор фильтров */
+div#btn_filters.d-grid {
+    padding: 0;
+    margin: 22px 0px;
+}
+a#selector_link {
+    height: 34px;
+    text-decoration: none;
+    margin: 0;
+}
+a#selector_link.active {
+    background-color: #e1fae8;
+}
+a#selector_link.active:hover {
+    background-color: white;
+    /*
+    border-color: var(--light-grey-color);
+    box-shadow: none;
+    */
+}
+h6#selector_text {
+    font-size: 24px;
+    margin-top: 2px !important;
+    color: var(--grey-color);
+    cursor: text;
+    margin: 0;
+}
+h6#selector_text.active {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0px !important;
+    letter-spacing: 1.5px;
+    color: var(--grey-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+h6#selector_text.active:hover {
+    color: black;
 }
 
+
+/* кнопки фильтров */
 div.accordion-item {
-    /* кнопки фильтров */
     border: 1px solid var(--light-grey-color);
 }
 
@@ -1061,6 +1097,7 @@ div.col-md-10.content {
 div.col-lg-3.col-md-4.product-card {
     margin: 10px;
     flex-grow: 1;
+    max-width: 33.3%;
     a.add-to-favorites {
         padding: 5px 5px 5px 5px;
     }
