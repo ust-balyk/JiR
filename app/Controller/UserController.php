@@ -19,7 +19,7 @@ class UserController
 
     public function logout()
     {
-        include CONSTRUCT . '/logins/logout.php';
+        include CONSTRUCT .'/logins/logout.php';
 
     }
     
@@ -81,29 +81,41 @@ class UserController
                     
                     if ($this->filterEmail($user->attributes['email'])) {
                         
-                        if (! db()->emailExists($user->attributes['email']) ) {
+                        if ( ! db()->emailExists($user->attributes['email']) ) {
+                            
+                            $timeTarget = 0.500;     // Целевое время
+                            $cost = 10;          // Минимальный порог
                             $password = $user->attributes['password'];
-                            $options = ['cost' => 11]; // Устанавливаем стоимость
+
+                            do {
+                                $cost++;
+                                $start = microtime(true);
+                                password_hash($password, PASSWORD_BCRYPT, ["cost" => $cost]);
+                                $end = microtime(true);
+                            } while (($end - $start) < $timeTarget);
+
+                            $cost = ($cost - 1);
+
+                            $options = ['cost' => $cost]; // устанавливаем сложность 10-15
                             $user->attributes['password'] = password_hash($password, PASSWORD_DEFAULT, $options);
-                            /*
-                            $user->attributes['password'] = password_hash (
-                              $user->attributes['password'], PASSWORD_DEFAULT
-                            );
-                             */
+
                             if ($user->save()) {
                                 session()->set('email', $user->attributes['email']);
                                 session()->set('name', $user->attributes['name']);
-                                app()->response->redirect('/');
-                                
+                                //app()->response->redirect('/');
+                                echo "<script>window.history.go(-3)</script>";
                             }
+
                         } else {
                             session()->setFlash('error', 'Укажите другой адрес или аутентифицируйтесь');
                             app()->response->redirect('/register');
                         }
+
                     } else {
                         session()->setFlash('error', 'Пожалуйста, введите корректный адрес электронной почты');
                         app()->response->redirect('/register');
                     }
+
                 } else {
                     session()->setFlash('error', 'Данное имя занято, пожалуйста, выберите любое другое');
                     app()->response->redirect('/register');
@@ -126,7 +138,7 @@ class UserController
                 $password =  htmlentities($password);
                 
                 if (db()->realUser($email, $password)) {
-                    app()->response->redirect('/');
+                    echo "<script>window.history.go(-2)</script>";
 
                 } else {
                     session()->setFlash('error', 'Пожалуйста, проверьте введённые данные');

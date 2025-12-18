@@ -7,7 +7,7 @@
         <nav class="breadcrumb" aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="<?= base_url('/home'); ?>">
+              <a href="<?= base_url('/'); ?>">
                 <img class="link_to_home" src="<?= base_url(POCKET_STYLE.'/favicon/home.svg'); ?>"
                     alt="link_to_the_home_page">
                 </img>

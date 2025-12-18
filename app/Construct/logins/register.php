@@ -58,7 +58,8 @@
                         <a style="font-weight:bold; color:#198754; text-decoration:none"
                             href="<?= base_url('/login'); ?>">Войти в систему,</a>
                         <a style="font-weight:bold; color:#198754; text-decoration:none"
-                            href="<?= base_url('/'); ?>"> или Отменить.</a>
+                            href="#" onclick="window.history.go(-2); return false;"> или Отказаться.</a>
+                            <!--href="<?= base_url('/'); ?>"> или Отменить.</a-->
                       </p>
 
                     </form>
