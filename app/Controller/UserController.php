@@ -93,9 +93,7 @@ class UserController
                                 password_hash($password, PASSWORD_BCRYPT, ["cost" => $cost]);
                                 $end = microtime(true);
                             } while (($end - $start) < $timeTarget);
-
                             $cost = ($cost - 1);
-
                             $options = ['cost' => $cost]; // устанавливаем сложность 10-15
                             $user->attributes['password'] = password_hash($password, PASSWORD_DEFAULT, $options);
 
