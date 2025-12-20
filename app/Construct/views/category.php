@@ -21,7 +21,6 @@
       <h1 class="text-center title_category">Категория</h1>
 
       <div class="row">
-
         <div class="col-md-2 sidebar">
 
           <div class="d-grid">
@@ -106,8 +105,8 @@
           </div>
 
         </div><!--sidebar-->
-
         <div class="col-md-10 content">
+
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-4 product-card">
@@ -216,7 +215,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 product-card">
+          <!--div class="col-lg-3 col-md-4 product-card">
             <a href="#">
               <div class="product-card-img">
                 <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">

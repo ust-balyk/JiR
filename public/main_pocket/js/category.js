@@ -31,16 +31,17 @@ $(function() {
     const child_filters  = $('.filters');           
     const child_ukiyo_e  = $('.ukiyo_e');
 
-    const sidebar_height  = 1000;
+//    const sidebar_height  = 1000;
     const filters_height  = 225;
     
     const resizeObserver = new ResizeObserver(entries => {
         for ( let entry of entries ) {
             const { width, height } = entry.contentRect;
-            if ( parent_sidebar.height() < sidebar_height ) {
-                child_ukiyo_e.hide();
+  //          if ( parent_sidebar.height() < sidebar_height ) {
+    //            child_ukiyo_e.hide();
 
-            } else if ( child_filters.height() > filters_height ) {
+      //      } else if ( child_filters.height() > filters_height ) {
+            if ( child_filters.height() > filters_height ) {
                 child_ukiyo_e.hide();
                 selector_link.setAttribute('href', 'http://localhost:8888');
                 selector_link.setAttribute('class', 'btn btn-outline-primary active');
