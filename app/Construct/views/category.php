@@ -1,6 +1,5 @@
 <section class="category">
    <div class="container category">
-
     <div class="items_category">
 
       <div class="container breadcrumb">
