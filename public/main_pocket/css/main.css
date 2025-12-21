@@ -1058,6 +1058,7 @@ div#slider-range {
 ul.filters_list {
   list-style-type: none; /* убирает маркеры */
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 /* кнопки выбора */
@@ -1076,6 +1077,14 @@ ul.filters_list {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+}
+
+/* строка метки переносится */
+label.form-check-label {
+    hyphens: auto;
+    -webkit-hyphens: auto; /* Safari */
+    -ms-hyphens: auto;    /* IE/Edge */
+    /* word-break: break-word; добавленно в разметку */
 }
 
 
