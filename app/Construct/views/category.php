@@ -21,14 +21,13 @@
       <h1 class="text-center title_category">Категория</h1>
 
       <div class="row">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-2 sidebar" style="height: 100%;">
 
           <div class="d-grid">
             <a href="#" class="btn btn-outline-primary"><h6>сбросить фильтры</h6></a>
           </div>
 
           <div class="filters">
-
             <div id="btn_filters" class="d-grid">
               <a id="selector_link" href="#" class="#">
                 <h6 id="selector_text" class="#"></h6>
@@ -51,7 +50,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="filter_1_1">
-                          <label class="form-check-label text-break" for="filter_1_1">
+                          <label class="form-check-label" for="filter_1_1">
                             Default checkbox Default checkbox
                           </label>
                         </div>
@@ -59,15 +58,15 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="filter_1_2">
-                          <label class="form-check-label text-break" for="filter_1_2">
+                          <label class="form-check-label" for="filter_1_2">
                             Предотвратите разрушение макета ваших компонентов длинными строками текста.
                           </label>
                         </div>
                       </li>
                       <li class="filters_list_item">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" value="" id="filter_1_3">
+                          <label class="form-check-label" for="filter_1_3">
                             Default checkbox
                           </label>
                         </div>
@@ -75,7 +74,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck4">
                             Default checkbox
                           </label>
                         </div>
@@ -83,7 +82,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck5">
                             Default checkbox
                           </label>
                         </div>
@@ -107,7 +106,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="filter_2_1">
-                          <label class="form-check-label text-break" for="filter_2_1">
+                          <label class="form-check-label" for="filter_2_1">
                             Default checkbox
                           </label>
                         </div>
@@ -115,7 +114,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="filter_2_2">
-                          <label class="form-check-label text-break" for="filter_2_2">
+                          <label class="form-check-label" for="filter_2_2">
                             Default checkbox
                           </label>
                         </div>
@@ -123,7 +122,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
                         </div>
@@ -131,7 +130,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
                         </div>
@@ -139,7 +138,7 @@
                       <li class="filters_list_item">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label text-break" for="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
                         </div>

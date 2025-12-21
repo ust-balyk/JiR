@@ -409,6 +409,7 @@ h6.product-card-title {
     -ms-hyphens: auto;    /* IE/Edge */
     overflow: scroll;
 }
+
 .product-card-title a {
     text-decoration: none;
     font-size: 18px;
@@ -721,10 +722,10 @@ div.top {
 }
 
 button#top {
+    position: relative;
     z-index: 2;
     width: 62px;
     height: 30px;
-    position: relative;
     margin-bottom: 60px;
     background-color: var(--nav-color);
     font-size: 19px;
@@ -888,6 +889,24 @@ a.btn.btn-outline-primary {
 div.filters {
     margin: 20px 0px 10px 0px;
 }
+
+#filters_accordion .accordion-item:first-of-type {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+#filters_accordion .accordion-item:last-of-type {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
 
 /* выбор фильтров */
 div#btn_filters.d-grid {
@@ -1067,7 +1086,7 @@ ul.filters_list {
   margin-bottom: 0;
 }
 
-/* кнопки выбора */
+/* индикатор выбора фильтра */
 .form-check-input {
     border-color: var(--light-grey-color);
 }
@@ -1079,14 +1098,15 @@ ul.filters_list {
     background-color: var(--light-blue-color);
     border-color: var(--light-grey-color);
     box-shadow: none;
-    background-image: url("../favicon/filter.svg");
+    background-image: none; /*url("../favicon/filter.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: contain;*/
 }
 
 /* строка метки переносится */
 label.form-check-label {
+    word-break: break-word;
     hyphens: auto;
     -webkit-hyphens: auto; /* Safari */
     -ms-hyphens: auto;    /* IE/Edge */

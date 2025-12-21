@@ -82,4 +82,4 @@ a:2:{s:15:"categories_menu";s:3968:"<div class="container dropdown-menu megamenu
             <h6>
                 <a href=http://localhost:8888/category/accessories>Аксессуары</a>
             </6>
-        </div></div></div>";s:4:"time";i:1766350412;}
+        </div></div></div>";s:4:"time";i:1766360850;}
