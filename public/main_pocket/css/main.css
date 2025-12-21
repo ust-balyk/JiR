@@ -811,6 +811,10 @@ section.category  {
     border-bottom: solid 2px rgba(255,140,0,0.1)
 }
 
+div.container.category {
+    padding: 0px 0px 0px 5px !important;
+}
+
 div.breadcrumb {
     background-color: var(--bg-color);
 }
@@ -962,10 +966,11 @@ button.accordion-button:focus {
 div.accordion-body {
     border: var(--light-grey-color);
 }
+/*
 #filter_1 {
     font-size: 18px;
     color: red;
-}
+}*/
 
 
 /* filter_price */
@@ -1048,6 +1053,13 @@ div#slider-range {
     background-color: var(--description-color);
 }
 
+/* списки выбора */
+
+ul.filters_list {
+  list-style-type: none; /* убирает маркеры */
+  padding-left: 0;
+}
+
 
 /* ukiyo_e */
 
@@ -1088,7 +1100,7 @@ div.col-md-10.content {
 div.col-lg-3.col-md-4.product-card {
     margin: 10px;
     flex-grow: 1;
-    /*max-width: 33.3%; /*31%;*/
+    max-width: 33.3%;
     a.add-to-favorites {
         padding: 5px 5px 5px 5px;
     }

@@ -1,4 +1,5 @@
-$(function() {
+//$(function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     /****** выбор ценового диапазона *******/
     const sliderRange = $('#slider-range');
@@ -20,36 +21,27 @@ $(function() {
     }
 
 
-    /******* скрыть гравюры *******/
+    /******* скрыть гравюры и показать кнопку *******/
     const element        = $('.filters');
-
     const btn_filters    = document.getElementById('btn_filters');
     const selector_link  = btn_filters.querySelector('#selector_link');
-    const selector_text  = btn_filters.querySelector('#selector_text');
-
-    const parent_sidebar = $('.sidebar');          
-    const child_filters  = $('.filters');           
-    const child_ukiyo_e  = $('.ukiyo_e');
-
-//    const sidebar_height  = 1000;
+    const selector_text  = btn_filters.querySelector('#selector_text');          
+    const block_filters  = $('.filters');           
+    const block_ukiyo_e  = $('.ukiyo_e');
     const filters_height  = 225;
-    
-    const resizeObserver = new ResizeObserver(entries => {
+
+    const activate_filter = new ResizeObserver(entries => {
         for ( let entry of entries ) {
             const { width, height } = entry.contentRect;
-  //          if ( parent_sidebar.height() < sidebar_height ) {
-    //            child_ukiyo_e.hide();
-
-      //      } else if ( child_filters.height() > filters_height ) {
-            if ( child_filters.height() > filters_height ) {
-                child_ukiyo_e.hide();
+            if ( block_filters.height() > filters_height ) {
+                block_ukiyo_e.hide();
                 selector_link.setAttribute('href', 'http://localhost:8888');
                 selector_link.setAttribute('class', 'btn btn-outline-primary active');
                 selector_text.setAttribute('class', 'active');
                 selector_text.textContent = 'применить фильтры';
 
             } else {
-                child_ukiyo_e.show();
+                block_ukiyo_e.show();
                 selector_link.setAttribute('class', '');
                 selector_text.setAttribute('class', '');
                 selector_text.textContent = 'Фильтры';
@@ -57,7 +49,7 @@ $(function() {
             }
         }
     });
-    resizeObserver.observe(element[0]);
+    activate_filter.observe(element[0]);
 
     /*
     ResizeObserver: Это стандартный веб API, работающий независимо от jQuery, но легко интегрируемый с ней.
@@ -67,6 +59,41 @@ $(function() {
 
     contentRect: Объект, содержащий width (ширину) и height (высота) элемента без учета отступов (padding).
     */
+
+
+    /* скрыть гравюры */
+    const sidebar = $('.sidebar');
+    const ukiyo_e  = $('.ukiyo_e');
+    const sidebar_height  = 1500;
+
+    const hide_ukiyo_e = new ResizeObserver(entries => {
+        for ( let entry of entries ) {
+            const { width, height } = entry.contentRect;
+            if ( sidebar.height() < sidebar_height ) {
+                ukiyo_e.hide();
+
+            } else {
+                ukiyo_e.show();
+
+            }
+        }
+    });
+    hide_ukiyo_e.observe(element[0]);
+
+    /* скрыть всплытие гравюр */
+    //const image = document.querySelectorAll('.image');
+    const image = document.getElementsByClassName('.image');
+
+    setTimeout(function() {
+        // Получаем истинный URL из data-src
+        const trueSrc = image.getAttribute('data-src');
+        // Меняем src, чтобы изображение начало загружаться
+        image.src = trueSrc;
+        // Опционально: можно убрать data-src после загрузки
+        image.removeAttribute('data-src');
+    
+    }, 1000); // миллисекунд
+
 
 
 });

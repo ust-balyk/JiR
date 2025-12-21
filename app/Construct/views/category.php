@@ -1,5 +1,6 @@
 <section class="category">
    <div class="container category">
+
     <div class="items_category">
 
       <div class="container breadcrumb">
@@ -47,7 +48,48 @@
                 <!--div id="filter_1" class="accordion-collapse collapse show"-->
                     <!--data-bs-parent="#filters_accordion"-->
                   <div class="accordion-body">
-                    <strong>This is the first item’s accordion body.</strong>
+                    <ul class="filters_list">
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -62,7 +104,48 @@
                 <div id="filter_2" class="accordion-collapse collapse">
                     <!--data-bs-parent="#filters_accordion"><!--отмена сворачивания-->
                   <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong>
+                    <ul class="filters_list">
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                      <li class="filters_list_item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -95,11 +178,11 @@
           </div><!--filters-->
 
           <div class="ukiyo_e">
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>"
+            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>"
                   alt="" loading="lazy"></img>
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>"
+            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>"
                   alt="" loading="lazy"></img>
-            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
+            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
                   alt="" loading="lazy"></img>  
           </div>
 
@@ -162,7 +245,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 product-card">
+          <!--div class="col-lg-3 col-md-4 product-card">
             <a href="#">
               <div class="product-card-img">
                 <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
