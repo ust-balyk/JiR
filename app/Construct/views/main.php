@@ -94,6 +94,8 @@
             <h6 class="product-card-title">
               <a href="#">
                 Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
+                Эссенция против старения кожи с астаксантином Astaxanthin Aging Care Essence Re'senza
               </a>
             </h6>
             <div class="product-card-price">

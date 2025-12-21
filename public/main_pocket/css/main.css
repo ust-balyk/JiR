@@ -363,13 +363,14 @@ a.btn.promo:hover {
     transform: scale(1.2); 
 }
 
+/* превью карточка продукта */
 div .product-card {
     height: 470px;
-    padding: 10px;
+    margin: 8px 6px 15px 6px; /* для тени */
+    padding: 10px 20px;
     border: 1px solid #989ea4; /*#a7acb1;*/
     border-radius: 3px;
     background-color: white;
-    margin: 6px 6px 10px 6px;
     transition: all .3s;
 }
 div .product-card:hover {
@@ -402,6 +403,10 @@ h6.product-card-title {
     text-align: center;
     height: 110px;
     text-decoration: none;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto; /* Safari */
+    -ms-hyphens: auto;    /* IE/Edge */
     overflow: scroll;
 }
 .product-card-title a {
@@ -731,7 +736,7 @@ button#top {
     border-color: var(--grey-color);
     border-radius: 3px; 
     box-shadow: 0 2px 5px var(--grey-color);
-    transition: all 370ms;
+    transition: all .3ms;
     opacity: 0;
 }
 
@@ -741,7 +746,7 @@ i.fa-solid.fa-chevron-up:hover {
 
 button#top:hover {
     box-shadow: none;
-    background-color: var(--bg-color);
+    background-color: white;
     color: black;
 }
 
@@ -768,7 +773,7 @@ input#input.hide {
     position: relative;
     border-radius: 3px;
     opacity: 0;
-    transition: all 370ms;
+    transition: all .3ms;
 }
 
 button#button {
@@ -788,7 +793,8 @@ button#button {
 
 button#button:hover {
     box-shadow: none;
-    color: #000;
+    background-color: white;
+    color: black;
 }
 
 input#input:focus+button#button.btn.btn-sm {
@@ -998,7 +1004,7 @@ input#min_price.form-control {
     padding-right: auto;
 }
 input#max_price.form-control {
-    direction: rtl; /* направление письма */
+    direction: rtl; /* направление письма сдвигает стоимость */
     margin-top: 20px;
     border: 1px solid var(--light-grey-color);
     border-top-left-radius: 6px;
@@ -1053,7 +1059,7 @@ div#slider-range {
     background-color: var(--description-color);
 }
 
-/* списки выбора */
+/* списки выбора фильтра */
 
 ul.filters_list {
   list-style-type: none; /* убирает маркеры */
