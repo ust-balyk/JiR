@@ -178,11 +178,11 @@
           </div><!--filters-->
 
           <div class="ukiyo_e">
-            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>"
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-a.jpg'); ?>"
                   alt="" loading="lazy"></img>
-            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>"
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-b.jpeg'); ?>"
                   alt="" loading="lazy"></img>
-            <img class="image" src="" data-src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
+            <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
                   alt="" loading="lazy"></img>  
           </div>
 
@@ -245,7 +245,7 @@
             </div>
           </div>
 
-          <!--div class="col-lg-3 col-md-4 product-card">
+          <div class="col-lg-3 col-md-4 product-card">
             <a href="#">
               <div class="product-card-img">
                 <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">
@@ -297,7 +297,7 @@
             </div>
           </div>
 
-          <!--div class="col-lg-3 col-md-4 product-card">
+          <div class="col-lg-3 col-md-4 product-card">
             <a href="#">
               <div class="product-card-img">
                 <img src="<?= base_url('/images/for-body/11870.jpeg'); ?>" alt="">

@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
     */
 
 
-    /* скрыть гравюры */
+    /* скрыть гравюры *//*
     const sidebar = $('.sidebar');
     const ukiyo_e  = $('.ukiyo_e');
-    const sidebar_height  = 1500;
+    const sidebar_height  = 1450;
 
     const hide_ukiyo_e = new ResizeObserver(entries => {
         for ( let entry of entries ) {
@@ -79,21 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     hide_ukiyo_e.observe(element[0]);
-
-    /* скрыть всплытие гравюр */
-    //const image = document.querySelectorAll('.image');
-    const image = document.getElementsByClassName('.image');
-
-    setTimeout(function() {
-        // Получаем истинный URL из data-src
-        const trueSrc = image.getAttribute('data-src');
-        // Меняем src, чтобы изображение начало загружаться
-        image.src = trueSrc;
-        // Опционально: можно убрать data-src после загрузки
-        image.removeAttribute('data-src');
-    
-    }, 1000); // миллисекунд
-
+    */
 
 
 });
