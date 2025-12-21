@@ -28,7 +28,6 @@
           </div>
 
           <div class="filters">
-
             <div id="btn_filters" class="d-grid">
               <a id="selector_link" href="#" class="#">
                 <h6 id="selector_text" class="#"></h6>
@@ -36,7 +35,6 @@
             </div>
 
             <div class="accordion" id="filters_accordion">
-
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button"
@@ -185,10 +183,9 @@
             <img src="<?= base_url(POCKET_STYLE .'/assets/banner/sidebar-c.jpeg'); ?>"
                   alt="" loading="lazy"></img>  
           </div>
-
         </div><!--sidebar-->
-        <div class="col-md-10 content">
 
+        <div class="col-md-10 content">
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-4 product-card">

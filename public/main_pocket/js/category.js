@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const selector_text  = btn_filters.querySelector('#selector_text');          
     const block_filters  = $('.filters');           
     const block_ukiyo_e  = $('.ukiyo_e');
-    const filters_height  = 225;
+    //const block_sidebar  = $('.sidebar');
+    //const sidebar_height = 1450;
+    const filters_height = 225;
 
     const activate_filter = new ResizeObserver(entries => {
         for ( let entry of entries ) {
@@ -39,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 selector_link.setAttribute('class', 'btn btn-outline-primary active');
                 selector_text.setAttribute('class', 'active');
                 selector_text.textContent = 'применить фильтры';
+
+            //} else if ( block_sidebar.height() < sidebar_height ) {
+              //  block_ukiyo_e.hide();
 
             } else {
                 block_ukiyo_e.show();
