@@ -57,7 +57,7 @@
                       </li>
                       <li class="filters_list_item">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                           <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
@@ -65,7 +65,7 @@
                       </li>
                       <li class="filters_list_item">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
                           <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
@@ -73,7 +73,7 @@
                       </li>
                       <li class="filters_list_item">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
                           <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
@@ -81,7 +81,7 @@
                       </li>
                       <li class="filters_list_item">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
                           <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
@@ -213,10 +213,10 @@
                   </div>
                 </div>
               </div><!--product-card-->
-            <!--/div><!--row-->
-          <!--/div><!--container-->
+            </div><!--row-->
+          </div><!--container-->
 
-          <div class="col-lg-3 col-md-4 product-card">
+          <!--div class="col-lg-3 col-md-4 product-card">
             <a href="#">
               <div class="product-card-img">
                 <img src="<?= base_url('/images/aromatherapy/11383.png'); ?>" alt="">

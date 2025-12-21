@@ -852,7 +852,6 @@ h1.text-center.title_category {
 /* sidebar */
 
 div.col-md-2.sidebar {
-    position: relative;
     padding-right: 0;
 }
 
@@ -1061,13 +1060,30 @@ ul.filters_list {
   padding-left: 0;
 }
 
+/* кнопки выбора */
+.form-check-input {
+    border-color: var(--light-grey-color);
+}
+.form-check-input:focus {
+    border-color: var(--light-grey-color);
+    box-shadow: none;
+}
+.form-check-input:checked {
+    background-color: var(--light-blue-color);
+    border-color: var(--light-grey-color);
+    box-shadow: none;
+    background-image: url("../favicon/filter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
 
 /* ukiyo_e */
 
 div.ukiyo_e {
-    position: absolute;
-    bottom: 0;
     height: auto;
+    margin-top: auto;
     padding: 0;
 }
 .ukiyo_e img {
