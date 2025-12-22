@@ -22,22 +22,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     /******* скрыть гравюры и показать кнопку *******/
+
+    // глобальная переменная для хранения высоты блока фильтров
+    window.filters_block_height = 0;
+
+    // получение и сохранение высоты
+    function update_block_height() {
+        // .height() - без padding/border, .outerHeight(true) - с margin/padding/border
+        window.filters_block_height = $('.filters').height();
+        //console.log("Высота блока: " + window.filters_block_height + "px");
+        // можно использовать filters_block_height, например, для установки другой высоты
+        // $('#anotherBlock').height(filters_block_height);
+    }
+    
+    // вызываем при загрузке страницы
+    $(document).ready(function() {
+        update_block_height(); // инициализация
+    });
+
     const element        = $('.filters');
-    const btn_filters    = document.getElementById('btn_filters');
+    const btn_filters    = document.getElementById('btn_activate_filters');
     const selector_link  = btn_filters.querySelector('#selector_link');
     const selector_text  = btn_filters.querySelector('#selector_text');          
     const block_filters  = $('.filters');           
     const block_ukiyo_e  = $('.ukiyo_e');
-    const filters_height = 225;
 
     const activate_filter = new ResizeObserver(entries => {
         for ( let entry of entries ) {
             const { width, height } = entry.contentRect;
-            if ( block_filters.height() > filters_height ) {
+            if ( block_filters.height() > filters_block_height ) {
                 block_ukiyo_e.hide();
                 selector_link.setAttribute('href', 'http://localhost:8888');
-                selector_link.setAttribute('class', 'btn btn-outline-primary active');
-                selector_text.setAttribute('class', 'active');
+                selector_link.setAttribute('class', 'btn btn-outline-primary activate_filters');
+                selector_text.setAttribute('class', 'activate_filters');
                 selector_text.textContent = 'применить фильтры';
 
             } else {

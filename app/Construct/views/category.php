@@ -28,9 +28,10 @@
           </div>
 
           <div class="filters">
-            <div id="btn_filters" class="d-grid">
-              <a id="selector_link" href="#" class="#">
-                <h6 id="selector_text" class="#"></h6>
+
+            <div id="btn_activate_filters" class="d-grid">
+              <a id="selector_link" href="#" class="">
+                <h6 id="selector_text" class=""></h6>
               </a>
             </div>
 

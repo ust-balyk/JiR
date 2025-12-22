@@ -70,6 +70,8 @@ html,
 body {
     height: 100%;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -908,26 +910,24 @@ div.filters {
 }
 
 
-/* выбор фильтров */
-div#btn_filters.d-grid {
+/* кнопка "применить фильтры" */
+div#btn_activate_filters {
     padding: 0;
     margin: 20px 0px;
 }
+
 a#selector_link {
-    height: 34px;
     text-decoration: none;
     margin: 0;
 }
-a#selector_link.active {
+
+a#selector_link.activate_filters {
     background-color: #e1fae8;
 }
-a#selector_link.active:hover {
+a#selector_link.activate_filters:hover {
     background-color: white;
-    /*
-    border-color: var(--light-grey-color);
-    box-shadow: none;
-    */
 }
+
 h6#selector_text {
     font-size: 24px;
     margin-top: 2px !important;
@@ -935,7 +935,7 @@ h6#selector_text {
     cursor: text;
     margin: 0;
 }
-h6#selector_text.active {
+h6#selector_text.activate_filters {
     font-size: 16px;
     font-weight: 400;
     margin-top: 0px !important;
@@ -944,7 +944,7 @@ h6#selector_text.active {
     text-decoration: none;
     cursor: pointer;
 }
-h6#selector_text.active:hover {
+h6#selector_text.activate_filters:hover {
     color: black;
 }
 
@@ -1013,10 +1013,11 @@ div.accordion-body {
 input#min_price.form-control {
     margin-top: 20px;
     border: 1px solid var(--light-grey-color);
-    border-top-left-radius: 0;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 0;
+    /*background-color: #e1fae8;*/
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0px;
     border-left: none;
     padding-left: 20px;
     text-align: left;
@@ -1026,10 +1027,11 @@ input#max_price.form-control {
     direction: rtl; /* направление письма сдвигает стоимость */
     margin-top: 20px;
     border: 1px solid var(--light-grey-color);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 6px;
+    /*background-color: #e1fae8;*/
+    border-top-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 3px;
     border-right: none;
     padding-right: 20px;
     text-align: right;
