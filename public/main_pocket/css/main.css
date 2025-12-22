@@ -889,7 +889,7 @@ a.btn.btn-outline-primary {
 /* filters */
 
 div.filters {
-    margin: 20px 0px 10px 0px;
+    margin: 21px 0px 10px 0px;
 }
 
 #filters_accordion .accordion-item:first-of-type {
@@ -913,7 +913,7 @@ div.filters {
 /* кнопка "применить фильтры" */
 div#btn_activate_filters {
     padding: 0;
-    margin: 20px 0px;
+    margin: 21px 0px;
 }
 
 a#selector_link {
@@ -1011,7 +1011,7 @@ div.accordion-body {
     height: 146px;
 }
 input#min_price.form-control {
-    margin-top: 20px;
+    margin-top: 22px;
     border: 1px solid var(--light-grey-color);
     /*background-color: #e1fae8;*/
     border-top-left-radius: 0px;
@@ -1019,13 +1019,13 @@ input#min_price.form-control {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 0px;
     border-left: none;
-    padding-left: 20px;
+    padding-left: 22px;
     text-align: left;
     padding-right: auto;
 }
 input#max_price.form-control {
     direction: rtl; /* направление письма сдвигает стоимость */
-    margin-top: 20px;
+    margin-top: 22px;
     border: 1px solid var(--light-grey-color);
     /*background-color: #e1fae8;*/
     border-top-left-radius: 3px;
@@ -1033,7 +1033,7 @@ input#max_price.form-control {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 3px;
     border-right: none;
-    padding-right: 20px;
+    padding-right: 22px;
     text-align: right;
     padding-left: auto;
 }
@@ -1060,7 +1060,12 @@ input[type=number] {
 /* кнопки фильтра по цене */
 div#slider-range {
     border-color: var(--light-grey-color);
-    margin: 38px 32px 0px 32px;
+    /* правый пиксель кажется ровнее */
+    margin: 37px 33px auto 32px;
+    /*
+    width: 70%;
+    margin: 38px auto;
+    */
 }
 .ui-slider-handle.ui-corner-all.ui-state-default {
     background-color: var(--light-blue-color);
@@ -1106,13 +1111,20 @@ ul.filters_list {
     background-size: contain;*/
 }
 
-/* строка метки переносится */
+/* строка метки */
 label.form-check-label {
+    /* строка переносится */
     word-break: break-word;
     hyphens: auto;
     -webkit-hyphens: auto; /* Safari */
     -ms-hyphens: auto;    /* IE/Edge */
-    /* word-break: break-word; добавленно в разметку */
+    /* word-break: break-word; можно добавить в разметку */
+
+    /* строка не копируется */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 
