@@ -23,18 +23,17 @@ $(document).ready(function() {
     /******* скрыть гравюры и показать кнопку *******/
 
     // глобальная переменная для хранения высоты блока фильтров
-    window.filters_block_height = 1;
+    window.filters_block_height = 10;
     // получение и сохранение высоты
     function update_block_height() {
         // .height() - без padding/border, .outerHeight(true) - с margin/padding/border
-        window.filters_block_height = $('.filters').height();
-        //console.log("Высота блока: " + window.filters_block_height + "px");
-        // можно использовать filters_block_height, например, для установки другой высоты
-        // $('#anotherBlock').height(filters_block_height);
+        //window.filters_block_height += $('.filters').height();
+        window.filters_block_height += $('.filters').outerHeight(true);
+    
     }
     // вызываем при загрузке страницы
     $(function() {
-        update_block_height(); // инициализация
+        update_block_height();
     
     });
 
@@ -49,14 +48,14 @@ $(document).ready(function() {
         for ( let entry of entries ) {
             const { width, height } = entry.contentRect;
             if ( block_filters.height() > filters_block_height ) {
-                block_ukiyo_e.hide();
+                block_ukiyo_e.fadeOut(400); //hide();
                 selector_link.setAttribute('href', 'http://localhost:8888');
                 selector_link.setAttribute('class', 'btn btn-outline-primary activate_filters');
                 selector_text.setAttribute('class', 'activate_filters');
                 selector_text.textContent = 'применить фильтры';
 
             } else {
-                block_ukiyo_e.show();
+                block_ukiyo_e.fadeIn(400); //show();
                 selector_link.setAttribute('class', '');
                 selector_text.setAttribute('class', '');
                 selector_text.textContent = 'Фильтры';
