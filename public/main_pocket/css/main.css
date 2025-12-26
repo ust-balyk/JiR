@@ -708,7 +708,7 @@ div.col-md-4.mt-3 { /* колонки с адресами */
 /* ===================Footer===================== */
 
 div.copyright {
-    height: 93px;
+    height: 90px;
     background-color: white;
     text-align: center;
 }
@@ -726,7 +726,7 @@ img.brand_footer {
 #top_btn {
     display: none;
     position: fixed;
-    bottom: 60px;
+    bottom: 74px;
     right: 46px;
     z-index: 2;
     width: 62px;
@@ -758,7 +758,7 @@ i.fa-solid.fa-chevron-up:hover {
 /* ===================Search Form================ */
 
 #search.search-form {
-    z-index: 2;
+    z-index: 2; /* наследуется */
     position: fixed;
     width: 0;
     height: 34px;
@@ -788,7 +788,7 @@ input#input.hide {
     width: 0;
 }
 
-button#button {
+button#submit {
     position: fixed;
     bottom: 20px;
     right: 46px;
@@ -804,13 +804,13 @@ button#button {
     transition: all .3ms;
 }
 
-button#button:hover {
+button#submit:hover {
     box-shadow: none;
     background-color: white;
     color: black;
 }
 
-input#input.form-control:focus+button#button.btn.btn-sm {
+input#input.form-control:focus+button#submit.btn.btn-sm {
     color: black;
     background-color: white;
 }

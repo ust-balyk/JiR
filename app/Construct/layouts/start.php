@@ -108,7 +108,7 @@
           <form id="search" class="search-form" action="">
             <input id="input" class="form-control form-control-sm hide"
                   type="search" placeholder="" aria-label="Поиск">
-            <button id="button" class="btn btn-sm" type="submit">?</button>
+            <button id="submit" class="btn btn-sm" type="submit">?</button>
           </form>
         </div><!--container-->
       </main>

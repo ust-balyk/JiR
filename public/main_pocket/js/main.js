@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
     // развернуть форму поиска 
-    $('#button').on('click', function(e) {
+    $('#submit').on('click', function(e) {
         e.preventDefault();        
         let form = $(this).parent();
         let inputSearch = form.find('#input');
