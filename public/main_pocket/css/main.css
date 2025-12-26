@@ -1159,26 +1159,26 @@ div.ukiyo_e {
 /* content */
 
 div.col-md-10.content {
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
 
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-items: stretch;
-  align-items: stretch;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
 }
 
 div.col-lg-3.col-md-4.product-card {
     margin: 10px;
     flex-grow: 1;
-    max-width: 33.3%;
+    /*max-width: 33.3%;*/
     a.add-to-favorites {
         padding: 5px 5px 5px 5px;
     }
