@@ -100,18 +100,15 @@
       <main> 
         <div class="container">
           <?= $view_file; ?>
-          <div class="container bg-none text-center fixed-bottom top"
-              style="display:flex; justify-content:flex-end;">
-            <button class="btn btn-sm" id="top"><i class="fa-solid fa-chevron-up"></i></button>
-          </div>
-          <div class="container bg-none text-center fixed-bottom" id="search">
-            <form class="search-form mb-3" action="">
-              <input class="form-control form-control-sm hide" id="input"
+          <button id="top_btn" title="Перейти к началу"> 
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <form id="search" class="search-form" action="">
+            <input id="input" class="form-control form-control-sm hide"
                   type="search" placeholder="" aria-label="Поиск">
-              <button class="btn btn-sm" id="button" type="submit">?</button>
-            </form>
-          </div>
-        </div>
+            <button id="button" class="btn btn-sm" type="submit">?</button>
+          </form>
+        </div><!--container-->
       </main>
 
       <footer>
@@ -163,7 +160,7 @@
 
         <section class="copyright">
           <div class="copyright">
-            <a  href="<?= base_url('/home'); ?>">
+            <a  href="<?= base_url('/'); ?>">
               <img class="brand_footer" src="<?= base_url(POCKET_STYLE .'/favicon/home.png'); ?>">
             </a>
             <!--p>&copy; ~ 2.3</p-->

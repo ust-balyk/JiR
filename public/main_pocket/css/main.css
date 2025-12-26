@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
     --nav-color:         rgba(255,255,255,0.6);
     --bg-color:          #fffffd;
@@ -65,6 +59,16 @@
 }
 
 /* ==================General==================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
 
 html,
 body {
@@ -704,7 +708,7 @@ div.col-md-4.mt-3 { /* колонки с адресами */
 /* ===================Footer===================== */
 
 div.copyright {
-    height: 52px;
+    height: 93px;
     background-color: white;
     text-align: center;
 }
@@ -719,35 +723,31 @@ img.brand_footer {
 
 /* ===================Button Top================= */
 
-div.top {
+#top_btn {
     display: none;
-}
-
-button#top {
-    position: relative;
+    position: fixed;
+    bottom: 60px;
+    right: 46px;
     z-index: 2;
     width: 62px;
-    height: 30px;
-    margin-bottom: 60px;
+    height: 34px;
+    outline: none; /* Удалить контур на focus */
     background-color: var(--nav-color);
     font-size: 19px;
     font-weight: 500;
-    display: flex; /* выравниваем иконку */
-    align-items: center; /* выравниваем по вертикали */
-    justify-content: center; /* по горизонтали */
     color: var(--grey-color);
-    border-color: var(--grey-color);
+    border: 1px solid var(--grey-color);
     border-radius: 3px; 
     box-shadow: 0 2px 5px var(--grey-color);
     transition: all .3ms;
-    opacity: 0;
 }
-
+i.fa-solid.fa-chevron-up {
+    margin-top: 5px;
+}
 i.fa-solid.fa-chevron-up:hover {
     color: black;
 }
-
-button#top:hover {
+#top_btn:hover {
     box-shadow: none;
     background-color: white;
     color: black;
@@ -757,30 +757,42 @@ button#top:hover {
 
 /* ===================Search Form================ */
 
-form.search-form {
+#search.search-form {
     z-index: 2;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    width: 0;
+    height: 34px;
+    bottom: 20px;
+    right: 46px;
 }
 
-input#input {
-    position: relative;
+input#input.form-control {
+    position: fixed;
+    margin-right: 20px;
+    width: 88%;
+    height: 34px;
+    bottom: 20px;
+    left: 42px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 80px;
     border-color: #454f5b;
     border-radius: 3px;
     box-shadow: 0 2px 5px #454f5b;
-    opacity: 1;
-    transition: all 370ms;
-}
-
-input#input.hide {
-    position: relative;
-    border-radius: 3px;
-    opacity: 0;
+    display: block;
     transition: all .3ms;
 }
 
+input#input.hide {
+    display: none;
+    width: 0;
+}
+
 button#button {
-    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 46px;
+    height: 34px;
     background-color: var(--nav-color);
     font-size: 19px;
     font-weight: 500;
@@ -788,10 +800,8 @@ button#button {
     padding: 0px 25px;
     border-color: #454f5b;
     border-radius: 3px;
-    top: 0;
-    right: 0;
     box-shadow: 0 2px 5px #454f5b;
-    transition: all 370ms;
+    transition: all .3ms;
 }
 
 button#button:hover {
@@ -800,13 +810,9 @@ button#button:hover {
     color: black;
 }
 
-input#input:focus+button#button.btn.btn-sm {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 0px;
-    color: #000;
-    box-shadow: none;
+input#input.form-control:focus+button#button.btn.btn-sm {
+    color: black;
+    background-color: white;
 }
 
 /* ===================Search Form================ */
@@ -918,7 +924,7 @@ div#btn_activate_filters {
 
 a#selector_link {
     text-decoration: none;
-    margin: 0;
+    margin: 0px !important;
 }
 
 a#selector_link.activate_filters {
@@ -930,7 +936,7 @@ a#selector_link.activate_filters:hover {
 
 h6#selector_text {
     font-size: 24px;
-    margin-top: 2px !important;
+    /*margin-top: 2px !important;*/
     color: var(--grey-color);
     cursor: text;
     margin: 0;

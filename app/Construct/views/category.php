@@ -40,12 +40,12 @@
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#filter_1"
-                      aria-expanded="true" aria-controls="filter_1">по бренду
+                      aria-expanded="true" aria-controls="filter_1">по действию
                   </button>
                 </h2>
                 <div id="filter_1" class="accordion-collapse collapse">
-                <!--div id="filter_1" class="accordion-collapse collapse show"-->
-                    <!--data-bs-parent="#filters_accordion"-->
+                <!--div id="filter_1" class="accordion-collapse collapse show"
+                    data-bs-parent="#filters_accordion"-->
                   <div class="accordion-body">
                     <ul class="filters_list">
                       <li class="filters_list_item">
@@ -84,62 +84,6 @@
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
                           <label class="form-check-label" for="defaultCheck5">
-                            Default checkbox
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#filter_2"
-                      aria-expanded="false" aria-controls="filter_2">по действию
-                  </button>
-                </h2>
-                <div id="filter_2" class="accordion-collapse collapse">
-                    <!--data-bs-parent="#filters_accordion"><!--отмена сворачивания-->
-                  <div class="accordion-body">
-                    <ul class="filters_list">
-                      <li class="filters_list_item">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="filter_2_1">
-                          <label class="form-check-label" for="filter_2_1">
-                            Default checkbox
-                          </label>
-                        </div>
-                      </li>
-                      <li class="filters_list_item">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="filter_2_2">
-                          <label class="form-check-label" for="filter_2_2">
-                            Default checkbox
-                          </label>
-                        </div>
-                      </li>
-                      <li class="filters_list_item">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label" for="defaultCheck1">
-                            Default checkbox
-                          </label>
-                        </div>
-                      </li>
-                      <li class="filters_list_item">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label" for="defaultCheck1">
-                            Default checkbox
-                          </label>
-                        </div>
-                      </li>
-                      <li class="filters_list_item">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label" for="defaultCheck1">
                             Default checkbox
                           </label>
                         </div>

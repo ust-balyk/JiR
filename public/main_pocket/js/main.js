@@ -1,39 +1,23 @@
-/* скрыть поле поиска при scroll */
-/*
-$(window).scroll(function() {
-    $('#search').hide();
-    clearTimeout($.data(this, 'scrollTimer'));
-    $.data(this, 'scrollTimer', setTimeout(function() {
-        $('#search').show();
-    }, 250));
-});
-*/
-
-/*Спрятать кнопку поиска при scroll*/
-$(window).scroll(function() {
-    
-    $("#search").css("display", "none").fadeIn("fast");
-
-});
-
 $(document).ready(function() {
 
-    /*спрятать кнопку #top */ 
-    let btnTop = $('#top');
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 500) {
-            $(btnTop).css("opacity", 1);
-        
+    
+    // получить кнопку "вернуться наверх"
+    top_btn = document.getElementById("top_btn");
+    window.onscroll = function() { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+            top_btn.style.display = "block";
         } else {
-            $(btnTop).css("opacity", 0);
+            top_btn.style.display = "none";
         }
-    });
-    btnTop.click(function() {
-        $('html, body').animate({scrollTop: 0}, 'slow');
-        return false;
+    }
+    document.getElementById("top_btn").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     });
 
-    /*Развернуть форму поиска*/ 
+
+    // развернуть форму поиска 
     $('#button').on('click', function(e) {
         e.preventDefault();        
         let form = $(this).parent();
@@ -45,8 +29,14 @@ $(document).ready(function() {
         }
 
     });
+    // спрятать кнопку поиска при scroll
+    $(window).scroll(function() {
+        $("#search").css("display", "none").fadeIn("fast");
+
+    });
     
-    /* счётчик достижений */
+
+    // счётчик достижений
     let counterBox = $('.achievements');
     if (counterBox.length) {
         let counterItem = $('.counter-num');

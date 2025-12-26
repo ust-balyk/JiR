@@ -1,5 +1,5 @@
-//$(function() {
-document.addEventListener('DOMContentLoaded', function() {
+$(function() {
+//document.addEventListener('DOMContentLoaded', function() {
 
     /****** выбор ценового диапазона *******/
     const sliderRange = $('#slider-range');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /******* скрыть гравюры и показать кнопку *******/
 
     // глобальная переменная для хранения высоты блока фильтров
-    window.filters_block_height = 0;
+    window.filters_block_height = 1;
 
     // получение и сохранение высоты
     function update_block_height() {

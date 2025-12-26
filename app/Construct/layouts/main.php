@@ -97,27 +97,23 @@
         <div class="banner">
           <img class="banner-img" src="<?= base_url(POCKET_STYLE .'/assets/banner/banner.jpg'); ?>"
               alt="изображение горы Фудзияма">
-          <!--img src="<?= base_url(POCKET_STYLE .'/assets/banner/banner.svg'); ?>"
+          <!--img src="<?//= base_url(POCKET_STYLE .'/assets/banner/banner.svg'); ?>"
             alt="изображение горы Фудзияма"-->
         </div><!--banner-->
       </header>
   
       <main> 
         <div class="container">
-          <?php if(isset($_SESSION['name'])) var_dump($_SESSION); ?>
           <?= $view_file; ?>
-          <div class="container bg-none text-center fixed-bottom top"
-              style="display:flex; justify-content:flex-end;"-->
-            <button class="btn btn-sm" id="top"><i class="fa-solid fa-chevron-up"></i></button>
-          </div>
-          <div class="container bg-none text-center fixed-bottom" id="search">
-            <form class="search-form mb-3" action="">
-              <input class="form-control form-control-sm hide" id="input"
+          <button id="top_btn" title="Перейти к началу"> 
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <form id="search" class="search-form" action="">
+            <input id="input" class="form-control form-control-sm hide"
                   type="search" placeholder="" aria-label="Поиск">
-              <button class="btn btn-sm" id="button" type="submit">?</button>
-            </form>
-          </div>
-        </div>
+            <button id="button" class="btn btn-sm" type="submit">?</button>
+          </form>
+        </div><!--container-->
       </main>
 
       <footer>
