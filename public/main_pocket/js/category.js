@@ -1,5 +1,4 @@
-$(function() {
-//document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
 
     /****** выбор ценового диапазона *******/
     const sliderRange = $('#slider-range');
@@ -25,7 +24,6 @@ $(function() {
 
     // глобальная переменная для хранения высоты блока фильтров
     window.filters_block_height = 1;
-
     // получение и сохранение высоты
     function update_block_height() {
         // .height() - без padding/border, .outerHeight(true) - с margin/padding/border
@@ -34,10 +32,10 @@ $(function() {
         // можно использовать filters_block_height, например, для установки другой высоты
         // $('#anotherBlock').height(filters_block_height);
     }
-    
     // вызываем при загрузке страницы
-    $(document).ready(function() {
+    $(function() {
         update_block_height(); // инициализация
+    
     });
 
     const element        = $('.filters');
